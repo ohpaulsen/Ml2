@@ -1,11 +1,11 @@
 \contentsline {section}{\numberline {1}Learning as a Search}{2}{section.1}
 \contentsline {subsection}{\numberline {1.1}Global optimal solutions}{2}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}Genetic Algorithm(GA)}{2}{subsection.1.2}
-\contentsline {subsection}{\numberline {1.3}Gradient Descent method}{2}{subsection.1.3}
-\contentsline {subsection}{\numberline {1.4}Performance domain}{2}{subsection.1.4}
-\contentsline {section}{\numberline {2}Statistical Learning}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Computer program}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Read input files}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Radar and Area plot}{3}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Distance Algorythms}{3}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Output}{3}{subsection.2.5}
+\contentsline {subsection}{\numberline {1.3}Gradient Descent method}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Performance domain}{3}{subsection.1.4}
+\contentsline {section}{\numberline {2}Statistical Learning}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Computer program}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Read input files}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Radar and Area plot}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Distance Algorythms}{7}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Output}{7}{subsection.2.5}

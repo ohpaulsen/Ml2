@@ -4,7 +4,8 @@
 \usepackage{parskip}
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
-
+\usepackage{listings}
+\usepackage{graphicx}
 \newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
 
 \def\name{Ole Henrik Paulsen}
@@ -67,7 +68,44 @@
 
 \section{Learning as a Search}
 \subsection{Global optimal solutions}
+
+\includegraphics{3dplot.png}
+
+The global minima in the fitness function are (-1,-1) 
+
+This can be calculated with this equaction:
+
+min(75(y + x**2)**2 + (1 +x)**2) = 0
+
 \subsection{Genetic Algorithm(GA)}
+
+This section is done in Python with the library Numpy for max, min and array
+handling(matrix). 
+
+I made a Class that takes alot of variables that you easy can edit to optimize
+the genetic algorithm. 
+
+The seed is made of random numbers between two values. random(-10,10) will give
+you a random number from -10 to 10. 
+
+The selection function are selecting the 4 best chromosomes and deleting the
+rest of the set. 
+
+Crossover are switching randomly x-values or y-values from a perrent with an
+other perrent. The new pair are added to the set for next generation.
+
+There is also spawning a new random pair of (X,Y) evry generation. The only
+ruule for this new random spawned pair is that is not alleready in the set of
+cromosomes. 
+
+The fitnes function is takeing a X and Y value as input and returing the number
+of the equation. 
+
+When the final generation of rouds are done it hopyfully retturing the cords
+-1,-1.
+
+
+
 \subsection{Gradient Descent method}
 \subsection{Performance domain}
 
@@ -95,6 +133,23 @@ I save the input data in a masked arrays. and split out the label into a own arr
 I confirm the input is 120 train samples and 10 validation samples in the output.
 
 \subsection{Radar and Area plot}
+I built the graphs under in Excel afterr hours of trying and failing in
+matplotlib and numpy. 
+
+Some of the graphs are using logarithmcs scala on the axis. 
+
+\includegraphics{stackplot.png}
+
+\includegraphics{stackplot2.png}
+
+\includegraphics{stackplot3.png}
+
+\includegraphics{radarplot.png}
+
+\includegraphics{radar2.png}
+
+*
+
 \subsection{Distance Algorythms}
 
 The follow three algorithms are included into the program:
