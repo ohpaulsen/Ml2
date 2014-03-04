@@ -1,0 +1,120 @@
+\documentclass[a4paper,12pt,pdftex]{article}
+
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+
+\def\name{Ole Henrik Paulsen}
+\def\studentnumber{130572}
+\def\course{Machine Learning and Pattern Recognition | IMT4612}
+\def\school{Gjøvik University Collage}
+\def\reportname{Assigment 2}
+% Spring, 2013 - Autumn, 2010 - Both are valid
+\def\semester{Spring 2014}
+
+\hypersetup
+{
+    pdftitle={\reportname},
+    pdfauthor={\name},
+    pdfsubject={\reportname},
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue   
+}
+
+\fancypagestyle{titlefooter}
+{                                                                               
+    \fancyhf{}                                                                  
+    \fancyfoot[c]{\footnotesize This document was compiled on \today}           
+} 
+
+\begin{document}
+
+\begin{titlepage}                                                               
+    \begin{center}                                                                                                   
+                                                                                
+        \large \course\\                                                        
+        \large \school, \semester\\[0.4cm]                                       
+        \HRule\\[1.5cm]                                                         
+                                                                                
+        \begin{minipage}{0.4\textwidth}                                         
+            \begin{flushleft}                                                   
+                % Some lecturers does not want to know your name...
+                \small \emph{Author:} \name\\                                  
+                \small \emph{Student number:} \studentnumber\\                  
+            \end{flushleft}                                                     
+        \end{minipage}                                                          
+                                                                                
+        \ \\[7.0cm]                                                             
+        \LARGE\textbf{\reportname}                                              
+                                                                                
+    \end{center}                                                                
+    \thispagestyle{titlefooter}                                                 
+\end{titlepage}                                                                 
+                                                                                
+\tableofcontents                                                                
+\clearpage   
+
+\begin{abstract}
+
+    Assigment 2 in Machinelearning
+
+\end{abstract}
+
+\section{Learning as a Search}
+\subsection{Global optimal solutions}
+\subsection{Genetic Algorithm(GA)}
+\subsection{Gradient Descent method}
+\subsection{Performance domain}
+
+\section{Statistical Learning}
+\subsection{Computer program}
+I did the programming in Python with the library Numpy and Time. You need to install Numpy, but time is a core
+library of Python. Numpy are used to handle sqrt, max, min and mathematical functions on arrays. I also used Numpy
+to read in data from the txt files. Numpy also have functions for Euclidean and chebyshev, but they are NOT used in my program.
+
+K Neaarest Neighbor are also programmed by from the bottom instead of using a library. 
+
+*K nearst Neighbor code*
+
+The program are scaled to handle large amount of input, both train and validation data, and 13 attributes takes under 3 secounds to handle.
+
+\subsection{Read input files}
+
+The train.txt and validation.txt are read into the program with Numpy's genfromtxt.
+*genfromtxt code* 
+
+I save the input data in a masked arrays. and split out the label into a own array.
+
+*Splitting code* 
+
+I confirm the input is 120 train samples and 10 validation samples in the output.
+
+\subsection{Radar and Area plot}
+\subsection{Distance Algorythms}
+
+The follow three algorithms are included into the program:
+
+Euclidean:
+
+Squar Euclidean:
+
+Chebyshev:
+
+As you can see they got different output from each other
+\subsection{Output}
+
+The output of the program is as follow:
+
+*Output from the program*
+
+\nocite{*}
+
+\bibliographystyle{acm}
+\bibliography{references}
+
+\end{document}
